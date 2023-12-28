@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "teleticket"
+version = "0.1.0"
+description = "Telegram ticket service"
+authors = ["Kochurov Mikhail <firepanda70@gmail.com>"]
+license = "MIT Licence"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.105.0"
+alembic = "^1.13.1"
+pydantic = "^2.5.2"
+pydantic-settings = "^2.1.0"
+aiogram = "^3.2.0"
+fastapi-users = {extras = ["sqlalchemy"], version = "^12.1.2"}
+asyncpg = "^0.29.0"
+uvicorn = "^0.25.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
